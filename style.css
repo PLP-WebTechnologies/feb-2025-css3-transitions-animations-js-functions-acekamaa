@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 2rem;
+    background-image: url('download.jpeg');
+    background-size: cover;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  li {
+    background: #fff;
+    margin: 10px auto;
+    padding: 10px;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s forwards;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Status styles */
+.complete {
+    background-color: #d4edda;
+    border-left: 5px solid #28a745;
+  }
+  
+  .notdone {
+    background-color: #f8d7da;
+    border-left: 5px solid #dc3545;
+  }
+  
+  .pending {
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+  }
+  
+  select {
+    margin-left: 10px;
+  }
+  
+  
+  /* Animation */
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
